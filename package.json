@@ -1,0 +1,30 @@
+{
+  "name": "newspoint",
+  "version": "1.0.0",
+  "description": "NEWSAPP",
+  "homepage": "https://github.com/SonaamMourya04/NewsPoint#readme",
+  "bugs": {
+    "url": "https://github.com/SonaamMourya04/NewsPoint/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SonaamMourya04/NewsPoint.git"
+  },
+  "license": "ISC",
+  "author": "Sonam Mourya",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.0"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.1.16",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "tailwindcss": "^4.1.16"
+  }
+}
