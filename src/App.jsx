@@ -1,13 +1,9 @@
 import React from 'react';
-import Header from './component/Header';
-import MainContent from './component/MainContent';
-import Footer from './component/footer';
+import ExampleOne from './components/ExampleOne';
 const App=()=>{
     return(
 <div>
-    <Header/>
-    <MainContent/>
-    <Footer/>
+<ExampleOne/>
     </div>
        
     );
