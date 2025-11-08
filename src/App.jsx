@@ -1,21 +1,17 @@
 import React from 'react';
+import {useRef} from "react";
+import FocusInput from './components/FocusInput';
+import Timer from './Timer';
 
-import { createContext } from 'react';
-import ComponentA from './components/ComponentA';
-import Counter from './components/Counter';
-import Form from './components/Form';
 
-export const Data=createContext()
+
+
 const App=()=>{
-    const name="Sonam";
+ 
     return(
 <div>
-<Data.Provider value={name}>
-   
-<ComponentA/>
-</Data.Provider>
-<Counter/>
-<Form/>
+   <FocusEvent/>
+   <Timer/>
     </div>
        
     );
