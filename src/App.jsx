@@ -1,7 +1,9 @@
 import React from 'react';
-import {useRef} from "react";
-import FocusInput from './components/FocusInput';
-import Timer from './Timer';
+import Counter from './components/Counter';
+import Todo from './components/Todo';
+import Meals from './components/Meals';
+import Calculator from './components/Calculator';
+import Toggle from './components/Toggle';
 
 
 
@@ -9,9 +11,14 @@ import Timer from './Timer';
 const App=()=>{
  
     return(
-<div>
-   <FocusEvent/>
-   <Timer/>
+    <div>
+        {/* <Meals/> */}
+    {/* <Counter/> */}
+    {/* <Todo/> */}
+    {/* <Calculator/> */}
+    <Toggle/>
+
+
     </div>
        
     );

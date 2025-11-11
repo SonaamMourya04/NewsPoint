@@ -1,30 +1,30 @@
-import React from'react';
-import ReactDom from 'react-dom/client';
+import React, {useState}from 'react'
 
-const reducer=(state,action)=>{
-    switch(action.type){
-        case 'increment':
-            return{count:state.count+1};
-        case 'decrement':
-            return{count:state.count-1};
-        case 'reset':
-            return{ count:0};
-            default:
-                return state;
-    }
-}
-
-import {useReducer} from 'react';
-const Counter=()=>{
-    const[state,dispatch]=useReducer(reducer,{count:0});
-    return(
+const Counter = () => {
+    const[count,setCount]=useState(0);
+    const increment=()=>setCount(count+1);
+    const decrement=()=>setCount(count-1);
+  return (
+    <div className="bg-black w-screen h-screen">
+        <h1 className="text-white">
+            {count}
+        </h1>
         <div>
-            <h1>Count:{state.count}</h1>
-            <button onClick={()=>dispatch({type:'increment'})}>+</button>
-            <button onClick={()=>dispatch({type:'decrement'})}>-</button>
-            <button onClick={()=>dispatch({type:'reset'})}>Reset</button>
-
+            <button 
+            className="rounded-full text-white bg-black w-12 h-12 items-centre justify-centre hover:border-2 boder white shadow-[0_0_10px_white] m-10"
+             onClick={increment}>
+                +
+            </button>
+            <button 
+            className="rounded-full text-white bg-black w-12 h-12 items-center justify-centre shadow-[0_0_10px_white] m-10"
+            onClick={decrement}
+            >
+                -
+            </button>
         </div>
-    )
+
+    </div>
+  )
 }
-export default Counter;
+
+export default Counter
